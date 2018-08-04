@@ -15,7 +15,7 @@ dotnet_csproj:
   informational_version: '{version}'
 before_build:
 - ps: >-
-    cd stage1/src
+    cd .
 
     yarn install
 
