@@ -25,7 +25,7 @@ before_build:
 
     dotnet restore
 build:
-  project: agodagit.csproj
+  project: agoda.csproj
   publish_aspnet_core: true
   verbosity: minimal
 notifications:
