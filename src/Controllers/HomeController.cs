@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using agoda.Services;
 
 namespace agoda.Controllers
 {
@@ -11,6 +12,7 @@ namespace agoda.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["name"] = new NameService().GetName("");
             return View();
         }
 
